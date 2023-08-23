@@ -219,12 +219,12 @@ nav{
 .music .navigation{
     color: #838383;
     font-weight: bold;
-    font-size: 1.1rem;
 }
 
 .music .navigation ul{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .music .navigation ul li{
@@ -247,6 +247,65 @@ nav{
 
 .music .navigation ul .active .dot{
     border-bottom: 3px solid #B5FF31;
+}
+
+.music .recent{
+    padding: 40px 20px;
+}
+
+.music .recent h2{
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+.music .recent .row{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.music .recent .row .col{
+    width: calc(100%/6);
+    max-width: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music .recent .row .col .card{
+    width: 95%;
+    height: 95%;
+}
+
+.music .recent .row .col .card .img{
+    width: 100%;
+}
+
+
+.music .recent .row .col .card .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.music .recent .row .col .card .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.music .recent .row .col .card .text h3{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.music .recent .row .col .card .text span{
+    color: #838383;
+    font-weight: bold;
 }
 
 
