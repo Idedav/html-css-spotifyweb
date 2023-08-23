@@ -20,13 +20,11 @@ nav{
     width: 225px;
     height: 100%;
     background-color: black;
-    border: 1px solid black;
 }
 
 .menu{
     width: 100%;
     height: calc(100% - 125px);
-    border: 1px solid black;
     overflow: hidden;
 }
 
@@ -35,9 +33,15 @@ nav{
     justify-content: center;
 }
 
-.menu .logo img{
+.menu .logo .logo-big{
     width: 200px;
     padding: 20px 10px;
+}
+
+.menu .logo .logo-small{
+    width: 25px;
+    display: none;
+    padding-top: 10px;
 }
 
 .menu .main-menu{
@@ -48,6 +52,23 @@ nav{
     font-size: 1.3rem;
     list-style: none;
     padding: 10px 20px;
+    display: flex;
+}
+
+.menu .main-menu .icon-list li:hover,
+.menu .main-menu .playlist .btn:hover span,
+.playlist .playlist-list .playlist-name li:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.menu .main-menu .playlist .btn:hover button{
+    background-color: white;
+}
+
+.menu .main-menu .icon-list li img{
+    width: 25px;
+    margin-right: 5px;
 }
 
 .no-active{
@@ -56,6 +77,7 @@ nav{
 
 .active{
     border-left: 5px solid #B5FF31;
+    color: white;
 }
 
 .menu .main-menu .playlist{
@@ -81,7 +103,7 @@ nav{
     border: none;
     font-size: 1.5rem;
     padding: 5px 10px;
-    background-color: #A4A4A4;
+    background-color: #838383;
 }
 
 .menu .main-menu .playlist .btn span{
@@ -89,16 +111,16 @@ nav{
     font-size: 1.3rem;
 }
 
-.playlist .playlist-list{
-    overflow: auto;
-}
-
 .playlist .playlist-name{
     padding: 15px 0px;
+}
+
+.playlist .playlist-list{
+    max-height: 300px;
     overflow: auto;
 }
 
-.playlist .playlist-name li{
+.playlist .playlist-list .playlist-name li{
     list-style: none;
     font-size: .9rem;
     padding: 5px 0px;
@@ -107,9 +129,51 @@ nav{
 .profile{
     width: 100%;
     height: 125px;
-    background-color: aqua;
-    border: 1px solid black;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.profile div{
+    display: flex;
+    color: #838383;
+    width: 85%;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.profile div:first-child{
+    border-bottom: 1px solid #838383;
+}
+
+.profile div img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.profile .account img{
+    background-color: #838383;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.profile div span{
+    font-size: .9rem
+    ;
+}
+
+.profile .account span{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
 
 /* MUSIC */
 .music{
@@ -147,6 +211,44 @@ nav{
     .music{
         width: calc(100% - 50px);
     }
+
+    .menu .logo .logo-big{
+        display: none;
+    }
+
+    .menu .logo .logo-small{
+        display: block;
+    }
+
+    .menu .main-menu .icon-list span{
+        display: none;
+    }
+
+    .menu .main-menu .icon-list .no-active,
+    .menu .main-menu .icon-list .active{
+        border: none;
+    }
+
+    .menu .main-menu .icon-list li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    .menu .main-menu .playlist{
+        display: none;
+    }
+
+    .profile div{
+        justify-content: center;
+    }
+
+    .profile div span{
+        display: none;
+    }
+    
 }
 
 @media screen and (max-height: 350px) {
