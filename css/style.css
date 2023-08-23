@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
 main{
     width: 100%;
     height: calc(100vh - 100px);
@@ -14,15 +19,89 @@ main{
 nav{
     width: 225px;
     height: 100%;
-    background-color: red;
+    background-color: black;
     border: 1px solid black;
 }
 
 .menu{
     width: 100%;
     height: calc(100% - 125px);
-    background-color: chartreuse;
     border: 1px solid black;
+    overflow: hidden;
+}
+
+.menu .logo{
+    display: flex;
+    justify-content: center;
+}
+
+.menu .logo img{
+    width: 200px;
+    padding: 20px 10px;
+}
+
+.menu .main-menu{
+    color: #838383;
+}
+
+.menu .main-menu .icon-list li{
+    font-size: 1.3rem;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.no-active{
+    border-left: 5px solid black;
+}
+
+.active{
+    border-left: 5px solid #B5FF31;
+}
+
+.menu .main-menu .playlist{
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu .main-menu .playlist span:first-child{
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.menu .main-menu .playlist .btn{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.menu .main-menu .playlist .btn button{
+    border: none;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    background-color: #A4A4A4;
+}
+
+.menu .main-menu .playlist .btn span{
+    padding-left: 15px;
+    font-size: 1.3rem;
+}
+
+.playlist .playlist-list{
+    overflow: auto;
+}
+
+.playlist .playlist-name{
+    padding: 15px 0px;
+    overflow: auto;
+}
+
+.playlist .playlist-name li{
+    list-style: none;
+    font-size: .9rem;
+    padding: 5px 0px;
 }
 
 .profile{
@@ -31,8 +110,6 @@ nav{
     background-color: aqua;
     border: 1px solid black;
 }
-
-
 
 /* MUSIC */
 .music{
@@ -70,4 +147,14 @@ nav{
     .music{
         width: calc(100% - 50px);
     }
+}
+
+@media screen and (max-height: 350px) {
+    .profile{
+        display: none;
+    }
+    .menu{
+        height: 100%;
+    }
+    
 }
