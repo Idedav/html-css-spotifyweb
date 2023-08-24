@@ -360,9 +360,156 @@ nav{
 .player{
     width: 100%;
     height: 100px;
-    background-color: blanchedalmond;
-    border: 1px solid black;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
 }
+
+.player .player-left,
+.player .player-center,
+.player .player-right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.player .player-left,
+.player .player-right{
+    width: 225px;
+}
+
+.player .player-center{
+    width: 40%;
+}
+
+.player .player-left .song{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.player .player-left .song .img{
+    width: 30%;
+    min-width: 25px;
+}
+
+.player .player-left .song .img img{
+    width: 100%;
+}
+
+.player .player-left .song .text{
+    padding-left: 10px;
+    font-size: .8rem;
+}
+
+.player .player-left .song .text h3{
+    color: white;
+}
+
+.player .player-left .song .text span{
+    color: #838383;
+}
+
+.player .player-left .icon{
+    color: #838383;
+    font-size: 1.1rem;
+    display: flex;
+}
+
+.player .player-left .icon i{
+    padding-left: 10px;
+}
+
+.player .player-center{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player .player-center .start-song{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.player .player-center .start-song i{
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.player .player-center .start-song .fa-circle-play{
+    font-size: 2rem;
+}
+
+
+.player .player-center .scrollbar{
+    color: white;
+    font-size: .7rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player .player-center .scrollbar span{
+    padding: 0px 20px;
+}
+
+.player .player-center .scrollbar .time{
+    width: 80%;
+    height: 3px;
+    border-radius: 30px;
+    background-color: #5B5B5B;
+    display: flex;
+    align-items: center;
+}
+
+.player .player-center .scrollbar .time .time-heard{
+    width: 25%;
+    height: 3px;
+    background-color: #BFF26B;
+    border-radius: 30px;
+}
+
+.player .player-center .scrollbar .time .circle{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.player .player-right{
+    justify-content: center;
+}
+
+.player .player-right .icon i{
+    color: white;
+    font-size: .9;
+    padding: 2px;
+}
+
+.player .player-right .volume{
+    width: 40%;
+    height: 3px;
+    background-color: #5B5B5B;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.player .player-right .volume .volume-heard{
+    width: 30%;
+    height: 3px;
+    background-color: white;
+}
+
+
+.player .player-right .volume .circle{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
 
 /* MEDIA QUERY */
 
