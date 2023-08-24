@@ -20,11 +20,13 @@ nav{
     width: 225px;
     height: 100%;
     background-color: black;
+    overflow: hidden;
 }
 
 .menu{
     width: 100%;
     height: calc(100% - 125px);
+    min-height: 400px;
     overflow: hidden;
 }
 
@@ -46,7 +48,7 @@ nav{
 
 .menu .main-menu{
     color: #838383;
-    height: 500px;
+    height: 80%;
 }
 
 .menu .main-menu .icon-list li{
@@ -86,9 +88,9 @@ nav{
 
 .menu .main-menu .playlist{
     padding: 15px 20px;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .menu .main-menu .playlist span:first-child{
@@ -120,8 +122,8 @@ nav{
 }
 
 .playlist .playlist-list{
-    height: 300px;
     overflow: auto;
+    height: 80%;
 }
 
 .playlist .playlist-list .playlist-name li{
@@ -138,6 +140,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .profile div{
@@ -367,16 +370,6 @@ nav{
 
     .profile div span{
         display: none;
-    }
-    
-}
-
-@media screen and (max-height: 350px) {
-    .profile{
-        display: none;
-    }
-    .menu{
-        height: 100%;
     }
     
 }
