@@ -451,6 +451,10 @@ nav{
     font-size: 1.1rem;
 }
 
+.player .player-center .start-song i:nth-child(4){
+    transform: rotate(180deg);
+}
+
 .player .player-center .start-song .fa-circle-play{
     font-size: 2rem;
 }
