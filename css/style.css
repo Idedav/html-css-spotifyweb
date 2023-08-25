@@ -437,6 +437,7 @@ nav{
 .player .player-center{
     flex-direction: column;
     justify-content: center;
+    margin: 0px 20px;
 }
 
 .player .player-center .start-song{
