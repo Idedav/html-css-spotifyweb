@@ -446,16 +446,20 @@ nav{
     height: 50%;
 }
 
-.player .player-center .start-song i{
-    margin: 10px;
+.player .player-center .start-song .btn{
+    width: 40px;
+    text-align: center;
+}
+
+.player .player-center .start-song .btn i{
     font-size: 1.1rem;
 }
 
-.player .player-center .start-song i:nth-child(4){
+.player .player-center .start-song .btn:nth-child(4){
     transform: rotate(180deg);
 }
 
-.player .player-center .start-song .fa-circle-play{
+.player .player-center .start-song .btn .fa-circle-play{
     font-size: 2rem;
 }
 
@@ -501,10 +505,14 @@ nav{
     justify-content: center;
 }
 
+.player .player-right .icon{
+    display: flex;
+}
+
 .player .player-right .icon i{
     color: white;
     font-size: .9;
-    padding: 2px;
+    padding: 5px;
 }
 
 .player .player-right .volume{
@@ -589,7 +597,6 @@ nav{
 
 .player .player-center .start-song .fa-circle-play:hover{
     font-size: 2.5rem;
-    margin: 6px;
 }
 
 .player .player-center .scrollbar .time:hover,
