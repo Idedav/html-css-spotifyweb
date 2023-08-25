@@ -447,7 +447,7 @@ nav{
 }
 
 .player .player-center .start-song i{
-    padding: 10px;
+    margin: 10px;
     font-size: 1.1rem;
 }
 
@@ -589,6 +589,7 @@ nav{
 
 .player .player-center .start-song .fa-circle-play:hover{
     font-size: 2.5rem;
+    margin: 6px;
 }
 
 .player .player-center .scrollbar .time:hover,
